@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/gotham-book.ttf); 
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Gotham;
+    background: #d9d9d9;
+}
+ul {
+    list-style-type: none;
+}
+
+/*Style for calendar*/
+
+.calendar {
+    margin: 20px;
+    width: 345px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+header {
+    background: #404a58;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.left-arrow {
+    display: inline-block;
+    margin-right: 85px;
+    height: 12px;
+    width: 8px;
+    background: url(../img/arrows.png) 0 0;
+}
+.right-arrow {
+    display: inline-block;
+    margin-left: 85px;
+    height: 12px;
+    width: 8px;
+    background: url(../img/arrows.png) 9px 0;
+}
+.table {
+    background: white;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+table {
+    text-align: center;
+    width: 270px;
+    margin: 0 auto;
+    padding: 25px 0;
+    color: #666;
+}
+td {
+    padding: 10px;
+}
+thead th {
+    padding-bottom: 15px;
+}
+.event {
+    color: #fb6362;
+}
+.today {
+    border-radius: 50%;
+    background: #fb6362;
+    color: white;
+}
+.inactive {
+    color: #c5c5c5;
+}
+button {
+    text-transform: uppercase;
+    border: none;
+    padding: 20px 90px;
+    background: #f58786;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+}
+button:hover {
+    background: #fb6362;
+    padding: 20px 105px;
+    transition: 1s;
+}
+
+/*Style for bar-graph */
+
+.bar-graph {
+    width: 790px;
+    height: 340px;
+    box-sizing: border-box;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    padding: 40px;
+    padding-top: 0;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.grids {
+    
+}
+.grids li {
+    height: 68px;
+    
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.grids li span {
+    position: relative;
+    top: 50px;
+}
+
+.bars {
+    position: relative;
+    width: 635px;
+    margin: 40px auto;
+}
+.bars li {
+    position:absolute;
+    vertical-align: bottom;
+    width: 55px;
+    height: 0;
+    display: inline-block;
+    margin: 0 15px;
+    background: #fb6362;
+    z-index: 6;
+}
+.bars li:nth-child(1){
+    height: 50px;
+    top: -90px;
+    left: 10px;
+}
+.bars li:nth-child(2){
+    height: 60px;
+    top: -100px;
+    left: 100px;
+}
+.bars li:nth-child(3){
+    height: 120px;
+    top: -160px;
+    left: 190px;
+}
+.bars li:nth-child(4){
+    height: 160px;
+    top: -200px;
+    left: 280px;
+}
+.bars li:nth-child(5){
+    height: 130px;
+    top: -170px;
+    left: 370px;
+}
+.bars li:nth-child(6){
+    height: 170px;
+    top: -210px;
+    left: 460px;
+}
+.bars li:nth-child(7){
+    height: 140px;
+    top: -180px;
+    left: 550px;
+}
+
+.bars li span {
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    left: 15px;
+}
+.bars li:nth-child(1) span{
+    top: 60px;
+}
+.bars li:nth-child(2) span{
+    top: 70px;
+}
+.bars li:nth-child(3) span{
+    top: 130px;
+}
+.bars li:nth-child(4) span{
+    top: 170px;
+}
+.bars li:nth-child(5) span{
+    top: 140px;
+}
+.bars li:nth-child(6) span{
+    top: 180px;
+}
+.bars li:nth-child(7) span{
+    top: 150px;
+}
+.number{
+    display: none;
+    position: absolute;
+    top: -180px;
+    background: yellow;
+    padding: 5px;
+}
+.bars li:hover .number {
+    display: block;
+}
+
+
+.email {
+    width: 380px;
+    background: white;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+.email form {
+        width:330px;
+    box-sizing: border-box;
+        margin: 0 auto;
+        position: relative;
+}
+.email input, .email textarea {
+    width:330px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 3px;
+    background: #f4f4f4;
+    margin: 0 auto 25px auto;
+    resize: none; 
+    border: 3px 2px 0 1px solid #666;
+}
+.add-email{
+    padding: 5px;
+    display: inline-block;
+    background: magenta;
+    position: absolute;
+    left: 300px;
+} 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<title>forms</title>
+</head>
+<body>
+	<div class="calendar">
+		<header>
+			<a href="#" class="left-arrow"> </a>
+			<a href="#">May 2014</a>
+			<a href="#" class="right-arrow"></a>
+		</header>
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>
+					</tr>
+				</thead>
+				<tr>
+					<td class="inactive">29</td>
+					<td class="inactive">30</td>
+					<td>1</td>
+					<td>2</td>
+					<td class="today">3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td class="event">7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+					<td class="event">23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+					<td class="inactive">1</td>
+					<td class="inactive">2</td>
+					<td class="inactive">3</td>
+				</tr>
+			</table>
+			<button>Add Event</button>
+		</div>
+	</div>
+	<div class="bar-graph">
+		<ul class="grids">
+			<li><span>40</span></li>
+			<li><span>30</span></li>
+			<li><span>20</span></li>
+			<li><span>10</span></li>
+		</ul>
+		<ul class="bars">
+			<li><span>Mon</span><span class="number">17</span></li>
+			<li><span>Tues</span><span class="number">19</span></li>
+			<li><span>Wed</span><span class="number">27</span></li>
+			<li><span>Thu</span><span class="number">33</span></li>
+			<li><span>Fri</span><span class="number">29</span></li>
+			<li><span>Sat</span><span class="number">34</span></li>
+			<li><span>Sun</span><span class="number">30</span></li>
+		</ul>
+	</div>
+	<div class="email">
+		<form>
+			<input type="text" placeholder="rick.james@mail.com" name=""/><a href="#" class="add-email"></a>
+			<input type="text"  placeholder="Subject" name=""/><a href="#" class="add-email"></a>
+			<textarea placeholder="Message" name=""></textarea>
+			<button>Send</button>
+		</form>
+	</div>
+</body>
+</html>

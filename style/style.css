@@ -13,7 +13,9 @@ body{
 ul {
     list-style-type: none;
 }
-
+a{
+    text-decoration: none;
+}
 /*Style for calendar*/
 
 .calendar {
@@ -24,13 +26,13 @@ ul {
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 }
-header {
+.calendar header {
     background: #404a58;
     padding: 20px;
     text-align: center;
     border-radius: 5px 5px 0 0;
 }
-header a {
+.calendar header a {
     text-decoration: none;
     color: white;
     font-size: 17px;
@@ -206,17 +208,32 @@ button:hover {
 }
 .number{
     display: none;
-    position: absolute;
-    top: -180px;
-    background: yellow;
-    padding: 5px;
 }
 .bars li:hover .number {
     display: block;
+    position: absolute;
+    top: -35px;
+    left: 10px;
+    background: #666;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.bars li:hover .number:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: none;
+  border: 5px solid;
+  border-top-color: #666;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px; /* adjust for border width */
 }
 
-
 .email {
+    display: inline-block;
     width: 380px;
     background: white;
     border-radius: 5px;
@@ -225,10 +242,10 @@ button:hover {
     box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 }
 .email form {
-        width:330px;
+    width:330px;
     box-sizing: border-box;
-        margin: 0 auto;
-        position: relative;
+    margin: 0 auto;
+    position: relative;
 }
 .email input, .email textarea {
     width:330px;
@@ -247,3 +264,130 @@ button:hover {
     position: absolute;
     left: 300px;
 } 
+
+
+/* Style for booking */
+
+.booking {
+    display: inline-block;
+    width: 345px;
+    background: white;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+.booking header {
+    position: relative;
+}
+.booking header a{
+    display: block;
+    position: absolute;
+    color: white;
+}
+.hotel {
+    font-size: 20px;
+    top: 130px;
+    left: 25px;
+}
+.location {
+    top: 155px;
+    left: 35px;
+    font-size: 14px;
+}
+.location:before {
+    position: relative;
+    content: url(../img/map-icon.png);
+    top: 3px;
+    left: -5px;
+}
+.booking form {
+    margin: 25px;
+}
+.booking form span{
+    display: block;
+}
+.booking input {
+    width: 295px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 3px;
+    background: #f4f4f4;
+    margin: 0 auto 25px auto;
+    resize: none; 
+    border: 3px 2px 0 1px solid #666;
+}
+.booking form label {
+    position: relative;
+}
+.data-select {
+    display: block;
+    background: url(../img/calendar-icon.png);
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: -9px;
+    left: 253px;
+}
+label span {
+    margin-bottom:10px;
+}
+input::-webkit-input-placeholder {
+    font-family: Gotham;
+}
+.select {
+    display: inline-block;
+}
+.select-style {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 140px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff url("../img/select.png") no-repeat 95% 50%;
+    background-color: #f4f4f4;
+    border: 3px 2px 0 1px solid #666;
+    resize: none;
+}
+
+.select-style select {
+    box-sizing: border-box;
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+.chidren {
+    margin-left: 10px;
+}
+.checkbox input {
+    width: 30px;
+}
+.checkbox{
+    display: block;
+}
+
+form .checkbox span {
+    display: inline-block;
+
+}
+.booking button {
+    padding: 20px 65px;
+    margin-top: 40px;
+}
+.booking button::before {
+    content: url(../img/search.png);
+    position: relative;
+    top: 5px;
+    left: -5px;
+}

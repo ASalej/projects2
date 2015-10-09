@@ -426,3 +426,132 @@ form .checkbox span {
     top: 5px;
     left: -5px;
 }
+
+/* Styles for destignation */
+
+.destignation {
+    display: inline-block;
+    width: 790px;
+    padding: 0;
+    background: white;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    font-size: 0;
+}
+.destignation article {
+    width:355px;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.destignation h2, .rewiewers-number {
+    color: #4d4d4d;
+}
+.destignation h2 {
+    font-size: 21px;
+    margin-bottom: 25px;
+} 
+.destignation article p, .destignation article span {
+    font-size: 14px;
+    color: #999999;
+}
+.destignation nav, .section {
+    display: inline-block;
+}
+.section {
+    box-sizing: border-box;
+}
+.rewiewers-number {
+    font-size: 14px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-bottom:40px;
+}
+.destignation nav li{
+    height: 113px;
+    width: 70px;
+    background-color: #404a58;
+    position: relative;
+}
+.destignation nav li:nth-child(2){
+    border-top: 1px solid #242931;
+    border-bottom: 1px solid #242931;
+}
+.destignation nav li:hover {
+    background: #fb6362;
+    transition: 1s;
+}
+.view {
+    display: block;
+    background: url(../img/nav-icons.png) no-repeat 0 0;
+    width: 27px;
+    height: 20px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.map {
+    display: block;
+    background: url(../img/nav-icons.png) no-repeat -49px 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 45px;
+    left: 22px;
+}
+.favorit {
+    display: block;
+    background: url(../img/nav-icons.png) no-repeat -27px 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 45px;
+    left: 22px;
+}
+.destignation img {
+    display: inline-block;
+    border-radius: 0 5px 5px 0 ;
+    position: relative;
+    left: 5px;
+}
+.read-more {
+    display: block;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #fb6362;
+}
+.image {
+    display: inline-block;
+    position: relative;
+}
+.image span{
+    position: absolute;
+    font-size: 14px;
+    top: 300px;
+}
+.comments, .likes {
+    display: inline-block;
+    position: absolute;
+    color: white;
+}
+.comments {
+    left: -120px;
+    height: 25px;
+}
+.comments:before{
+    content: url(../img/comment.png);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+}
+.likes {
+    left: -50px;
+}
+.likes:before {
+    content: url(../img/like.png);
+    top: -5px;
+    left: -30px; 
+    position: absolute;
+}

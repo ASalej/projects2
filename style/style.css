@@ -103,8 +103,8 @@ button:hover {
 .bar-graph {
     width: 790px;
     height: 340px;
-    box-sizing: border-box;
     display: inline-block;
+    box-sizing: border-box;
     background: white;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.4);
@@ -114,9 +114,6 @@ button:hover {
     vertical-align: top;
 }
 
-.grids {
-    
-}
 .grids li {
     height: 68px;
     
@@ -234,6 +231,7 @@ button:hover {
 
 .email {
     display: inline-block;
+    vertical-align: top;
     width: 380px;
     background: white;
     border-radius: 5px;
@@ -257,15 +255,51 @@ button:hover {
     resize: none; 
     border: 3px 2px 0 1px solid #666;
 }
+.email textarea {
+    min-height: 225px;
+}
+.email label{
+    position: relative;
+}
 .add-email{
-    padding: 5px;
     display: inline-block;
-    background: magenta;
+    background: url(../img/email-sprite.png) no-repeat 0 0;
     position: absolute;
-    left: 300px;
+    height: 20px;
+    width: 20px;
+    left: 295px;
+    top: 0
 } 
-
-
+.add-file {
+    display: inline-block;
+    background: url(../img/email-sprite.png) no-repeat -21px 0px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 295px;
+    top: 0;
+}
+.email button {
+    padding: 20px 40px;
+    margin-bottom: 0;
+    float: right;
+}
+.email span {
+    background: #404a58;
+    color: white;
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    padding: 10px 40px 10px 10px;
+}
+.close {
+    height: 15px ;
+    width: 15px;
+    background:  url(../img/email-sprite.png) no-repeat -42px 0px;
+    position: absolute;
+    top: 2px;
+    left: 200px;
+}
 /* Style for booking */
 
 .booking {
@@ -382,8 +416,9 @@ form .checkbox span {
 
 }
 .booking button {
-    padding: 20px 65px;
-    margin-top: 40px;
+    padding: 20px 74px;
+    margin: 40px auto 5px auto;
+    
 }
 .booking button::before {
     content: url(../img/search.png);

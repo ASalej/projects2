@@ -93,8 +93,16 @@
 	</div>
 	<div class="email">
 		<form>
-			<input type="text" placeholder="rick.james@mail.com" name=""/><a href="#" class="add-email"></a>
-			<input type="text"  placeholder="Subject" name=""/><a href="#" class="add-email"></a>
+			<label>
+				<input type="text" placeholder="rick.james@mail.com" name=""/>
+				<span>rick.james@mail.com</span>
+				<a href="#" class="close"></a>
+				<a href="#" class="add-email"></a>
+			</label>
+			<label for="">
+				<input type="text"  placeholder="Subject" name=""/>
+				<a href="#" class="add-file"></a>
+			</label>
 			<textarea placeholder="Message" name=""></textarea>
 			<button>Send</button>
 		</form>
@@ -142,5 +150,6 @@
 			<button>Search rooms</button>
 		</form>
 	</div>
+	<div></div>
 </body>
 </html>
